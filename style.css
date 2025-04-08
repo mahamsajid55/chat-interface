@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Main Container */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Chat Container */
+  #chat-container {
+    width: 400px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Chat Box */
+  #chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    height: 80%;
+  }
+  
+  /* Messages */
+  #messages {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #messages div {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    max-width: 90%;
+    align-self: flex-start;
+    font-size: 14px;
+  }
+  
+  #messages .user-message {
+    background-color: #e0ffe0;
+    align-self: flex-end;
+  }
+  
+  /* User Input Area */
+  #message-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Send Button */
+  #send-button {
+    width: 80px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-top: 1px solid #ddd;
+  }
+  
+  #send-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* User List */
+  #user-list {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    max-height: 30%;
+    overflow-y: scroll;
+    font-size: 14px;
+  }
+  
+  #user-list div {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  #user-list div.online {
+    background-color: #90ee90;
+  }
+  
+  #user-list div.offline {
+    background-color: #ffcccb;
+  }
+  
+  /* Chat Room Selection */
+  #room-input {
+    width: 70%;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #join-room {
+    padding: 6px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #join-room:hover {
+    background-color: #45a049;
+  }
+  
